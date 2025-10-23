@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico: Curso de Gestão Portuária - FAETERJ Campos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0F8FF;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .stat-card h3 {
+            color: #118AB2;
+        }
+        .stat-card p {
+            color: #073B4C;
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+            padding-left: 2.5rem; 
+        }
+        .timeline-item:not(:last-child) {
+            border-left: 3px solid #118AB2;
+        }
+        .timeline-item:last-child {
+            padding-bottom: 0;
+            border-left: 3px solid transparent;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -0.8rem;
+            top: 0.1rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            background-color: #118AB2;
+            border: 3px solid #F0F8FF;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-extrabold text-center text-[#073B4C]">
+                Curso Superior de Tecnologia em Gestão Portuária
+            </h1>
+            <p class="text-center text-xl text-[#118AB2] font-semibold">FAETERJ Campos</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 space-y-16">
+
+        <section id="hero" class="text-center py-12">
+            <h2 class="text-5xl md:text-7xl font-extrabold text-[#073B4C] leading-tight">
+                Um Porto de Oportunidades
+            </h2>
+            <p class="mt-4 text-2xl text-gray-700 max-w-3xl mx-auto">
+                A resposta da FAETEC à transformação econômica do Norte Fluminense, impulsionada pelos complexos portuários e pela indústria de óleo e gás.
+            </p>
+        </section>
+
+        <section id="gap">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-[#073B4C]">A Demanda Regional</h3>
+                <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">
+                    A região vive um crescimento acelerado com projetos de escala global, mas enfrenta uma escassez crítica de mão de obra qualificada.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card p-6 text-center stat-card">
+                    <h3 class="text-4xl font-extrabold">Super Porto do Açu</h3>
+                    <p class="mt-2 text-lg font-semibold">10 berços de atracação e capacidade para navios de 220.000 toneladas.</p>
+                </div>
+                <div class="card p-6 text-center stat-card">
+                    <h3 class="text-4xl font-extrabold">3+ Complexos</h3>
+                    <p class="mt-2 text-lg font-semibold">Impacto direto dos portos do Açu (RJ), Macaé (RJ) e Ponta Negra (RJ).</p>
+                </div>
+                <div class="card p-6 text-center stat-card">
+                    <h3 class="text-4xl font-extrabold">Centro de Energia</h3>
+                    <p class="mt-2 text-lg font-semibold">Proximidade estratégica das bacias de petróleo de Campos, Santos e Espírito Santo.</p>
+                </div>
+                <div class="card p-6 text-center bg-[#FF6B6B] text-white">
+                    <h3 class="text-4xl font-extrabold text-white">A Lacuna</h3>
+                    <p class="mt-2 text-lg font-semibold">Falta de profissionais com formação superior para gerenciar as novas operações portuárias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-[#073B4C]">A Solução: FAETERJ Campos</h3>
+                <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">
+                    Um curso superior público, gratuito e presencial, desenhado para formar os gestores que o mercado precisa.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card p-6 text-center stat-card">
+                    <h3 class="text-5xl font-extrabold">2400</h3>
+                    <p class="mt-2 text-xl font-semibold">Horas Totais</p>
+                </div>
+                <div class="card p-6 text-center stat-card">
+                    <h3 class="text-5xl font-extrabold">5</h3>
+                    <p class="mt-2 text-xl font-semibold">Semestres de Duração</p>
+                </div>
+                <div class="card p-6 text-center stat-card">
+                    <h3 class="text-5xl font-extrabold">136</h3>
+                    <p class="mt-2 text-xl font-semibold">Vagas Anuais (Matutino e Noturno)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="structure" class="card p-6 md:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-[#073B4C]">Estrutura do Curso</h3>
+                    <p class="mt-4 text-lg text-gray-700">
+                        O curso de 2400 horas é cuidadosamente balanceado para unir uma base teórica robusta com a experiência prática essencial exigida pelo setor.
+                    </p>
+                    <p class="mt-4 text-lg text-gray-700">
+                        A formação é composta por 2000 horas de disciplinas teóricas, 200 horas de Práticas Profissionais Supervisionadas (PPS) e 200 horas de Atividades Acadêmico-Científico-Culturais (AACC), garantindo um profissional completo.
+                    </p>
+                </div>
+                <div class="relative h-[300px] sm:h-96 max-h-[400px] w-full max-w-sm mx-auto">
+                    <canvas id="workloadChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="career-path" class="card p-6 md:p-8">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-[#073B4C]">Sua Trilha de Carreira Acelerada</h3>
+                <p class="mt-3 text-lg text-gray-600 max-w-3xl mx-auto">
+                    O curso possui um diferencial único: certificações intermediárias. A cada etapa, você conquista uma nova qualificação para o mercado de trabalho, antes mesmo de se formar.
+                </p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="text-sm font-semibold text-[#118AB2]">MÓDULO I (1° + 2° Períodos)</p>
+                    <h4 class="text-2xl font-bold text-gray-900">Agente Administrativo</h4>
+                    <p class="text-gray-700">Base sólida em RH, finanças e logística.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="text-sm font-semibold text-[#118AB2]">MÓDULO II (1° + 3° Períodos)</p>
+                    <h4 class="text-2xl font-bold text-gray-900">Operador de Transportes Multimodais</h4>
+                    <p class="text-gray-700">Coordenação de embarque, transbordo e rotas.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="text-sm font-semibold text-[#118AB2]">MÓDULO III (3° + 4° Períodos)</p>
+                    <h4 class="text-2xl font-bold text-gray-900">Assistente de Comércio Exterior</h4>
+                    <p class="text-gray-700">Gestão de documentação de importação e exportação.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="text-sm font-semibold text-[#118AB2]">MÓDULO IV (4° + 5° Períodos)</p>
+                    <h4 class="text-2xl font-bold text-gray-900">Coordenador de Operações Portuárias</h4>
+                    <p class="text-gray-700">Gestão estratégica e operacional de organizações portuárias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="context" class="card p-6 md:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="relative h-72 sm:h-80 max-h-[350px] w-full max-w-xl mx-auto">
+                    <canvas id="portsChart"></canvas>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-[#073B4C]">O Contexto Nacional</h3>
+                    <p class="mt-4 text-lg text-gray-700">
+                        O Brasil possui 43 portos marítimos, vitais para o comércio exterior. A maioria (21) está concentrada nas regiões Sul e Sudeste, o coração econômico do país.
+                    </p>
+                    <p class="mt-4 text-lg text-gray-700">
+                        O Estado do Rio de Janeiro se destaca com 7 desses portos, incluindo o Super Porto do Açu, posicionando a região como um hub logístico fundamental e reforçando a necessidade deste novo curso.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white mt-16 shadow-inner">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-600">&copy; 2025 FAETERJ Campos - Fundação de Apoio à Escola Técnica</p>
+            <p class="text-sm text-gray-500 mt-1">Avenida Alberto Lamego, n° 712, Parque Califórnia, Campos dos Goytacazes - RJ</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const chartColors = ['#118AB2', '#06D6A0', '#FFD166', '#FF6B6B', '#073B4C'];
+            
+            const multilineTooltipTitle = {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                      return label.join(' ');
+                    } else {
+                      return label;
+                    }
+                }
+            };
+
+            const workloadCtx = document.getElementById('workloadChart')?.getContext('2d');
+            if (workloadCtx) {
+                new Chart(workloadCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: [
+                            'Teoria', 
+                            ['Práticas', 'Supervisionadas'], 
+                            ['Atividades', 'Culturais']
+                        ],
+                        datasets: [{
+                            label: 'Carga Horária (horas)',
+                            data: [2000, 200, 200],
+                            backgroundColor: [chartColors[0], chartColors[1], chartColors[2]],
+                            borderColor: '#F0F8FF',
+                            borderWidth: 4,
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    font: { size: 14 }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: multilineTooltipTitle
+                            }
+                        }
+                    }
+                });
+            }
+
+            const portsCtx = document.getElementById('portsChart')?.getContext('2d');
+            if (portsCtx) {
+                new Chart(portsCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: [
+                            ['Total de Portos', 'Marítimos (Brasil)'], 
+                            ['Portos no', 'Sul/Sudeste'], 
+                            ['Portos no Rio', 'de Janeiro']
+                        ],
+                        datasets: [{
+                            label: 'Número de Portos Marítimos',
+                            data: [43, 21, 7],
+                            backgroundColor: [chartColors[4], chartColors[0], chartColors[1]],
+                            borderRadius: 4
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: multilineTooltipTitle
+                            }
+                        },
+                        scales: {
+                            x: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
