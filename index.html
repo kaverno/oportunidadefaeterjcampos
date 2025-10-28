@@ -50,6 +50,28 @@
             background-color: #118AB2;
             border: 3px solid #F0F8FF;
         }
+
+
+ /* Estilos para os cards de habilidades */
+        .skill-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            border-left: 5px solid #0ea5e9; /* sky-500 */
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .feature-icon {
+            color: #f59e0b; /* amber-500 */
+            margin-bottom: 1rem;
+        }
+
+
+        
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -125,7 +147,7 @@
             </div>
         </section>
 
-<section id="solution">
+        <section id="solution">
             <div class="text-center mb-12">
                 <h3 class="text-4xl font-bold text-[#073B4C]">Edital e Inscrição</h3>
                 <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">
@@ -213,6 +235,60 @@
                 </div>
             </div>
         </section>
+
+ <!-- Habilidades Desenvolvidas pelos Alunos -->
+        <section id="habilidades" class="py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-4xl font-bold text-sky-800 text-center mb-12">Habilidades do Nosso Aluno: Prontos para o Mercado</h2>
+                <p class="text-center text-lg text-slate-700 mb-10 max-w-3xl mx-auto">Nossos Tecnólogos em Gestão Portuária são formados com um conjunto robusto de competências que os tornam profissionais versáteis e altamente empregáveis.</p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="skill-card">
+                        <div class="flex items-center text-sky-700 mb-4">
+                            <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.944 12c0 2.894.945 5.609 2.598 7.025a11.956 11.956 0 016.485 2.12c1.41-.955 2.894-1.996 4.475-2.944a12.001 12.001 0 001.077-.442 12.001 12.001 0 001.077-.442c-.01-.004-.02-.008-.03-.012-.01-.004-.02-.008-.03-.012a12.001 12.001 0 001.077-.442c.01-.004.02-.008.03-.012.01-.004.02-.008.03-.012z"></path></svg>
+                            <h3 class="text-2xl font-bold text-sky-900">Raciocínio Lógico e Análise de Dados</h3>
+                        </div>
+                        <p class="text-slate-600">Familiaridade com números, planilhas, pesquisas e estatísticas para realizar estudos, organizar dados e medir desempenho.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="flex items-center text-sky-700 mb-4">
+                            <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h2a2 2 0 002-2V7a2 2 0 00-2-2h-3L11 2 7 5H4a2 2 0 00-2 2v11a2 2 0 002 2h2m0-8a2 2 0 100-4 2 2 0 000 4zm0 0h6m-3-3l3 3m0 0l-3 3"></path></svg>
+                            <h3 class="text-2xl font-bold text-sky-900">Gestão de Pessoas e Relacionamento</h3>
+                        </div>
+                        <p class="text-slate-600">Habilidade em relações interpessoais, negociação, gestão de conflitos e manutenção de equipes motivadas.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="flex items-center text-sky-700 mb-4">
+                            <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <h3 class="text-2xl font-bold text-sky-900">Visão Estratégica e Inovação</h3>
+                        </div>
+                        <p class="text-slate-600">Capacidade de utilizar recursos para atingir objetivos, identificar pontos fortes/fracos e contribuir para a modernização portuária.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="flex items-center text-sky-700 mb-4">
+                            <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h7a2 2 0 002-2v-1a2 2 0 012-2h2.945M10 20v-1m4 1v-1m4 1h.01M7 20h.01M16 15V8a2 2 0 00-2-2h-4a2 2 0 00-2 2v7m-3 0h12"></path></svg>
+                            <h3 class="text-2xl font-bold text-sky-900">Visão Global e Intermodal</h3>
+                        </div>
+                        <p class="text-slate-600">Compreensão da cadeia de transportes, armazenagem, legislação alfandegária e visão intermodal do ciclo origem-destino.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="flex items-center text-sky-700 mb-4">
+                            <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.042 6.84-2.946 9.614l-2.036-2.036A13.003 13.003 0 009 11h3zm6.002-3.002c-.933-.933-2.338-1.428-3.794-1.428-.865 0-1.745.244-2.508.736l-.004.004-.006.006A10.003 10.003 0 0012 8a10.003 10.003 0 00-4.794-.964c-.863 0-1.722.244-2.508.736l-.004.004-.006.006A10.003 10.003 0 003 11h2c0-2.894.945-5.609 2.598-7.025a11.956 11.956 0 016.485 2.12c1.41-.955 2.894-1.996 4.475-2.944a12.001 12.001 0 001.077-.442 12.001 12.001 0 001.077-.442c-.01-.004-.02-.008-.03-.012-.01-.004-.02-.008-.03-.012a12.001 12.001 0 001.077-.442c.01-.004.02-.008.03-.012.01-.004.02-.008.03-.012zM12 12v.01M9 12h.01M15 12h.01M12 15h.01M12 9h.01M6 18h.01M18 18h.01"></path></svg>
+                            <h3 class="text-2xl font-bold text-sky-900">Inglês Instrumental</h3>
+                        </div>
+                        <p class="text-slate-600">Conhecimento indispensável para a comunicação no cenário logístico global e para a atualização constante.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="flex items-center text-sky-700 mb-4">
+                            <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.559 23.559 0 0112 15c-1.399 0-2.75-.285-4.004-.848m-4.486-3.868a23.559 23.559 0 0113.255-4.004M12 3c-1.399 0-2.75.285-4.004.848m4.004-4.004A23.559 23.559 0 0121 10.745m-4.486 3.868a23.559 23.559 0 01-13.255 4.004M12 21c1.399 0 2.75-.285 4.004-.848m-4.004-4.004A23.559 23.559 0 013 13.255m4.486 3.868c1.254.563 2.605.848 4.004.848m-4.004-4.004a23.559 23.559 0 01-13.255-4.004"></path></svg>
+                            <h3 class="text-2xl font-bold text-sky-900">Agente de Mudança e Ética</h3>
+                        </div>
+                        <p class="text-slate-600">Capacidade de compreender e promover a cultura organizacional, combatendo vícios e fomentando a inovação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
     </main>
 
